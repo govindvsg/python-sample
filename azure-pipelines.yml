@@ -43,7 +43,12 @@ stages:
         source antenv/bin/activate
         python -m pip install --upgrade pip
         pip install setup
-        pip install -r requirements.txt
+        pip install click==6.7
+        pip install Flask==1.0.2
+        pip install itsdangerous==0.24
+        pip install Jinja2==2.10
+        pip install MarkupSafe==1.0
+        pip install Werkzeug==0.15.3
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 
